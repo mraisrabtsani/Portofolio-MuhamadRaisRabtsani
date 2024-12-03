@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio - Muhamad Rais Rabtsani</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Muhamad Rais Rabtsani</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Muhamad Rais Rabtsani</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/foto-profile.png" alt="Muhamad Rais Rabtsani profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Muhamad Rais Rabtsani</h1>
+        <p class="section__text__p2"><span class="auto-type"></span></p>
+        <!-- <p class="section__text__p2">Wordpress Developer and Videografer</p> -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV - MUHAMAD RAIS RABTSANI.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='https://drive.google.com/file/d/1C3S0N_M8u2tDUIMJf5uz55Q0_yQu_KTJ/view?usp=sharing'">
+            Contact Info
+          </button> -->
+        </div>
+        <div id="socials-container">
+          <img
+          src="./assets/gmail.png"
+          alt="My Gmail profile"
+          class="icon"
+          onclick="location.href='mailto://m.raisrabtsani@gmail.com/'"
+        />
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/muhamad-rais-rabtsani/'"
+          />
+          <img
+          src="./assets/instagram.png"
+          alt="My Instagram profile"
+          class="icon"
+          onclick="location.href='https://www.instagram.com/raisrbtsani/'"
+        />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mraisrabtsani'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/unas.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>S.Kom. Bachelors Degree <b>2024</b> <br />Universitas Nasional - Informatics </p>
+            </div>
+            
+            <div class="details-container">
+              <img
+                src="./assets/eskperience.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p><b> 6 months </b> internship<br />Web Developer</p>
+            </div>
+          </div>
+
+          <div class="text-container">
+            <p>
+              I'm a graduate student of Informatics at National University. 
+              Hardworking, energetic, conscientious and unyielding. 
+              Has internship experience at PT Cosmax Indonesia as QA/QC for 3 months 
+              and internship at Antero Prosesi Edukasi Foundation as Web Development for 3 months. 
+              During college, actively organized as a Camera Person at Unas TV, 
+              and as a CTO in the Muda Berbuat community.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Intership</h2>
+            <div class="article-container">
+                <div>
+                  <h3>Yayasan Antero Prosesi Edukasi</h3>
+                  <b>|Web Developer (Feb - Apr 2023)</b>
+                  <p>Responsible for creating and developing the foundation's company profile website,
+                     managing content reports, and developing social media content ideas.</p>
+                </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Organization</h2>
+            <div class="article-container">
+                <div>
+                  <h3>Unas TV</h3>
+                  <b>|Camera Person, Technician, and Web Development (2021 - 2024)</b>
+                  <p>Responsible for recording images for campus TV broadcasts, 
+                    video, movie, and streaming production, managing articles on the Unas TV website, 
+                    and maintaining computers, networks, and devices in the Unas TV Lab.</p>
+                  <h3>Muda Berbuat</h3>
+                  <b>|Chief Technology Officer (2022 - 2024)</b>
+                  <p>Responsible for developing the technical aspects of the organization, 
+                    managing the Muda Daya Kreasi website, and organizing weekly activity ideas.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='#projects'"
+      />
+    </section>
+    
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Web Developer and Design Content</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/web1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Unas TV</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://tv.unas.ac.id/'"
+              >
+                Website
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.instagram.com/unas_tv/'"
+              >
+                Instagram
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/web2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Yayasan Antero Prosesi Edukasi</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://yapeantero.com/'"
+              >
+                Website
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.instagram.com/yape.antero/'"
+              >
+                Instagram
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/web4.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">YAPE SPP</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/mraisrabtsani/yapespp'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.instagram.com/yape.antero/'"
+              >
+                Instagram
+              </button>
+            </div>
+          </div>
+        </div> 
+      </div>
+    </section>
+
+      <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Videographer</h1>
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/jurnalistik.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Journalist</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/_WuGEeUAQxo?si=xg0B8rv3w_ZBJtwY'"
+              >
+                Link Video 1
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/JwSa35pQSD0?si=2umyGVgG5bOemQTS'"
+              >
+                Link Video 2
+              </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://youtu.be/3gZ1gQAAx5E?si=bBd120yt0jLLABdE'"
+            >
+                Link Video 3
+            </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/streaming.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Streming</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/live/EdTUHXgVdZk?si=CTBSNGX3OMkgmDe4'"
+              >
+                Link Video 1
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/live/A5PJHMvd9D8?si=pHXPRocQYbKpXlX8'"
+              >
+                Link Video 2
+              </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://www.youtube.com/live/SCL-BT51C6I?si=XtLMeyfNbzXyRpFC'"
+            >
+                Link Video 3
+            </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/content.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Content</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/AXaa8-biPo8?si=nKqIP_bn6Z5d2u5L'"
+              >
+                Link Video 1
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/wiFEjD7qU0A?si=QaSGMhIU8lvmuV7t'"
+              >
+                Link Video 2
+              </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='https://youtu.be/Z0qmrjlk9Ug?si=9EPswQfzquWDc0FC'"
+            >
+                Link Video 3
+            </button>
+            </div>
+          </div>
+        </div>
+      </section>
+ 
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">CTO Muda Berbuat</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/mudaberbuat1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Program </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.instagram.com/mudaberbuat.id/'"
+              >
+                Instagram
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.instagram.com/p/CqOlxWESPZM/?img_index=1'"
+              >
+                Program
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/vmix.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Operating vMix</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/@mudaberbuat9705'"
+              >
+                Youtube
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://youtu.be/qixoM7EZMmE?si=q5hFgkPZMEpqhtnK'"
+              >
+                Link Video
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/web3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Muda Daya Kreasi</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://mudadayakreasi.com/'"
+              >
+                Expired Link
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.instagram.com/mudadayakreasi.official/'"
+              >
+                Instagram
+              </button>
+            </div>
+          </div>
+        </div> 
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto://m.raisrabtsani@gmail.com/">m.raisrabtsani@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/contact.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>+62 896-7368-7678</p>
+        </div>
+        <!-- <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/muhamad-rais-rabtsani/">LinkedIn</a></p>
+        </div> -->
+        
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Muhamad Rais Rabtsani</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed(".auto-type",{
+        strings: ["Web Developer", "UI/UX", "IT SUPPORT", "Videographer"],
+        typeSpeed : 150,
+        backSpeed : 150,
+        backDelay : 150,
+        loop : true
+      })
+    </script>
+  </body>
+</html>
